@@ -8,11 +8,11 @@ import { Router } from '@angular/router';
 })
 export class WelcomeComponent {
 lines: string[] = [
-    "In a universe filled with countless stars… 🌠",
-    "I was lucky enough to find a friend who shines the brightest. ✨",
+     "In a universe filled with countless stars… 🌠",
+    "I was lucky enough to find you who always talks the shit. ✨",
     "Through laughter, memories, and every moment shared…",
-    "You’ve always been my constant light in the galaxy of life. 🌌",
-    "This is a journey of friendship… created just for you. 💫"
+    "You’ve always been the funniest person. 🌌",
+    "This is a journey… created just for you. 💫"
   ];
 
   currentLine: string = this.lines[0];
