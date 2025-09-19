@@ -1,7 +1,11 @@
 {
   "version": 2,
+  "public": true,
   "builds": [
-    { "src": "dist/shrutika/**", "use": "@vercel/static" }
+    {
+      "src": "dist/shrutika/**/*",
+      "use": "@vercel/static"
+    }
   ],
   "routes": [
     {
