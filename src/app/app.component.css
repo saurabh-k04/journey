@@ -1,0 +1,13 @@
+/* Basic global styling */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff0f5;
+  scroll-behavior: smooth;
+}
+
+.main-content {
+  padding: 0;
+  min-height: 100vh;
+}

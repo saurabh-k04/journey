@@ -1,0 +1,42 @@
+.story-card {
+  max-width: 600px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  animation: fadeInUp 1s ease;
+}
+
+.story-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.story-content {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.story-content h2 {
+  margin-bottom: 0.8rem;
+  font-size: 1.8rem;
+  color: #ff6f61;
+}
+
+.story-content p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

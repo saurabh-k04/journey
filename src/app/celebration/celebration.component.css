@@ -1,0 +1,39 @@
+.celebration-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('/assets/backgrounds/celebration-bg.jpg') no-repeat center center/cover;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.message-card {
+  text-align: center;
+  background: rgba(255, 240, 245, 0.95);
+  padding: 2rem 3rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(255, 105, 180, 0.3);
+  animation: popIn 1s ease forwards;
+}
+
+.message-card h1 {
+  color: #ff6f91;
+  margin-bottom: 1rem;
+}
+
+.message-card p {
+  color: #333;
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+@keyframes popIn {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,8 @@
+<div class="story-grid-container">
+  <app-story-item
+    *ngFor="let story of stories"
+    [imageUrl]="story.imageUrl"
+    [title]="story.title"
+    [description]="story.description">
+  </app-story-item>
+</div>

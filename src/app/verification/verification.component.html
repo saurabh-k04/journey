@@ -1,0 +1,17 @@
+<div class="verification-container">
+  <div class="card">
+    <h2>🔐 Verify Yourself, Miss X 💖</h2>
+    <p>Answer these questions to unlock our memories ✨</p>
+
+    <form (ngSubmit)="submit()">
+      <div *ngFor="let q of questions; let i = index" class="question">
+        <label>{{ q.question }}</label>
+        <input type="text" [(ngModel)]="q.userAnswer" name="q{{i}}" required />
+      </div>
+
+      <button type="submit">Verify ➡️</button>
+    </form>
+
+    <p class="error" *ngIf="errorMessage">{{ errorMessage }}</p>
+  </div>
+</div>

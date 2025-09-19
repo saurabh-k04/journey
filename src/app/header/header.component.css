@@ -1,0 +1,36 @@
+.header {
+  background: linear-gradient(90deg, #ffdde1, #ee9ca7);
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 4px 8px rgba(238, 156, 167, 0.4);
+}
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* .nav {
+  display: flex;
+  gap: 1.5rem;
+
+  a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: #ff6f91;
+    }
+
+    &.active {
+      border-bottom: 2px solid #fff;
+    }
+  }
+} */
