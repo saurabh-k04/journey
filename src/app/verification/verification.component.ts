@@ -29,14 +29,10 @@ export class VerificationComponent {
     );
 
     if (allCorrect) {
-      // Save verification in localStorage
       localStorage.setItem('verified', 'true');
-
-      // Navigate to story page
       this.router.navigate(['/story']);
     } else {
       this.errorMessage = "Oops 💔 — some answers are wrong, try again!";
     }
   }
 }
-
