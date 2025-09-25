@@ -13,14 +13,13 @@ interface Question {
   styleUrls: ['./verification.component.css']
 })
 export class VerificationComponent {
-questions: Question[] = [
+  questions: Question[] = [
     { question: "How i call you?", answer: "Madam" },
     { question: "Where we went out first time? 🎨", answer: "Kiro" },
     { question: "We met through whom?", answer: "Sankalp" }
   ];
 
   errorMessage: string = "";
-  isVerified: boolean = false;
 
   constructor(private router: Router) {}
 
@@ -30,10 +29,14 @@ questions: Question[] = [
     );
 
     if (allCorrect) {
-      this.isVerified = true;
+      // Save verification in localStorage
+      localStorage.setItem('verified', 'true');
+
+      // Navigate to story page
       this.router.navigate(['/story']);
     } else {
       this.errorMessage = "Oops 💔 — some answers are wrong, try again!";
     }
   }
 }
+
