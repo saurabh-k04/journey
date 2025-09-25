@@ -1,7 +1,10 @@
 {
   "version": 2,
   "builds": [
-    { "src": "dist/shrutika/**", "use": "@vercel/static" }
+    {
+      "src": "package.json",
+      "use": "@vercel/angular"
+    }
   ],
   "routes": [
     {
